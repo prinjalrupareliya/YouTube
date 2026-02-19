@@ -22,10 +22,10 @@ const CreateChannelModal = ({ isOpen, onClose }) => {
       const existingChannel = allChannels[userEmail];
       
       if (existingChannel) {
-        // જો ડેટા પહેલેથી હોય તો સ્ટેટમાં ભરો
+        
         setName(existingChannel.c_name);
         setImage(existingChannel.c_image);
-        setChannelId(existingChannel.id); // API માં અપડેટ કરવા માટે ID
+        setChannelId(existingChannel.id); 
         setIsEditing(true);
       } else {
         setIsEditing(false);

@@ -18,11 +18,11 @@ const VideoCard = ({ video }) => {
     return `${mins}:${secs < 10 ? "0" : ""}${secs}`;
   };
 
-  // 🔒 UNIQUE KEY per video
+  
   const viewsKey = `video_views_${video.id}`;
   const daysKey = `video_days_${video.id}`;
 
-  // 🔹 Views (generate once, store forever)
+ 
   let views = localStorage.getItem(viewsKey);
   if (!views) {
     const v = Math.floor(Math.random() * 900000) + 1000000;
@@ -33,7 +33,7 @@ const VideoCard = ({ video }) => {
     localStorage.setItem(viewsKey, views);
   }
 
-  // 🔹 Days ago (generate once, store forever)
+  
   let daysAgo = localStorage.getItem(daysKey);
   if (!daysAgo) {
     const d = Math.floor(Math.random() * 30) + 1;
@@ -61,13 +61,13 @@ const VideoCard = ({ video }) => {
           )}
 
           <div className="text-info">
-            {/* 🔹 Title */}
+            
             <h2 className="video-title">{video.title}</h2>
 
-            {/* 🔹 Channel name */}
+           
             <p className="video-channel">{video.channel}</p>
 
-            {/* 🔹 Views & days */}
+           
             <p className="video-meta">
               {views} • {daysAgo}
             </p>

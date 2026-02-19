@@ -27,7 +27,7 @@ const VoiceSearchModal = ({
     }
   }, [isOpen, resetTranscript]);
 
-  // ✅ Safe call to parent
+  
   useEffect(() => {
     if (transcript && typeof onVoiceSearch === "function") {
       onVoiceSearch(transcript);

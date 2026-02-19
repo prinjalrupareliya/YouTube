@@ -39,7 +39,7 @@ const Home = () => {
     });
   };
 
-  // ✅ Voice filter logic
+  
   const filteredVideos = videos.filter((video) =>
     video.title.toLowerCase().includes(voiceSearch.toLowerCase())
   );

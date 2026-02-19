@@ -1,4 +1,4 @@
-/* Full page center */
+
 .add-shorts-container {
   min-height: 100vh;
   width: 100%;
@@ -28,7 +28,7 @@
   background-color: #ffffff;
 }
 
-/* Title */
+
 .add-shorts-card h2 {
   color: #ffffff;
   text-align: center;
@@ -40,14 +40,14 @@
   color: #000000;
 }
 
-/* Form layout */
+
 .add-shorts-card form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
 
-/* Inputs */
+
 .add-shorts-card input {
   width: 100%;
   padding: 12px 14px;
@@ -70,12 +70,12 @@
   color: #1d1c1c;
 }
 
-/* Focus effect */
+
 .add-shorts-card input:focus {
   outline: 2px solid #ff0000;
 }
 
-/* Button */
+
 .add-shorts-card button {
   padding: 12px;
   border: none;
@@ -88,12 +88,12 @@
   transition: 0.3s;
 }
 
-/* Hover */
+
 .add-shorts-card button:hover {
   background: #e60000;
 }
 
-/* Mobile responsive */
+
 @media (max-width: 480px) {
   .add-shorts-card {
     margin: 0 16px;

@@ -1,10 +1,10 @@
-/* Action column */
+
 .action-cell {
   position: relative;
   width: 60px;
 }
 
-/* 3-dot icon */
+
 .menu-icon {
   font-size: 22px;
   cursor: pointer;
@@ -15,7 +15,7 @@
   color: #fff;
 }
 
-/* Dropdown menu */
+
 .action-menu {
   position: absolute;
   top: 30px;
@@ -27,7 +27,7 @@
   z-index: 10;
 }
 
-/* Menu items */
+
 .action-item {
   padding: 10px;
   display: flex;

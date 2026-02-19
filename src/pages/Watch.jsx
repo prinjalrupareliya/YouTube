@@ -74,7 +74,7 @@ const Watch = () => {
     window.scrollTo(0, 0);
   }, [id, userEmail, currentUserId]);
 
-  // ================= LIKE =================
+  
   const handleLike = () => {
     if (!loginData) {
       alert("Please login to like videos!");
@@ -107,7 +107,7 @@ const Watch = () => {
     updateLikesOnServer(id, newLikes);
   };
 
-  // ================= DISLIKE =================
+  
   const handleDislike = () => {
     if (!loginData) {
       alert("Please login to dislike videos!");
@@ -153,7 +153,7 @@ const Watch = () => {
     );
   };
 
-  // ================= SUBSCRIBE =================
+  
   const handleSubscribe = () => {
     if (!loginData) {
       alert("Please login to subscribe!");
@@ -183,7 +183,7 @@ const Watch = () => {
     localStorage.setItem("subscribedChannels", JSON.stringify(allSubs));
   };
 
-  // ================= DOWNLOAD =================
+  
   const getYouTubeID = (url) => {
     const regExp =
       /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
@@ -235,7 +235,7 @@ const Watch = () => {
         <div className="video-details">
           <h1 className="watch-title">{video.title}</h1>
 
-          {/* Channel + Actions */}
+         
           <div className="video-actions-row">
             <div className="channel-info">
               <img
@@ -294,7 +294,6 @@ const Watch = () => {
                 <MdShare size={20} /> Share
               </button>
 
-              {/* ✅ DOWNLOAD BUTTON */}
               <div className="download-wrapper">
                 <button
                   className="download-btn"
@@ -319,11 +318,11 @@ const Watch = () => {
           </div>
         </div>
 
-        {/* ✅ COMMENTS SECTION */}
+        
         <Comments videoId={id} />
       </div>
 
-      {/* Recommendations */}
+ 
       <div className="watch-recommendations">
         {videos.map((v) => (
           <Link

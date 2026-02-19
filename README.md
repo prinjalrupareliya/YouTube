@@ -13,6 +13,7 @@
 – Krina Gajera
 – Hetvi Vadaiya
 – Prinjal Rupareliya
+
 ✨ Features 🔐 Authentication & Authorization
 
     • User Registration & Login
